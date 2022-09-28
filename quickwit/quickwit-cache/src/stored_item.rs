@@ -17,7 +17,10 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-use tantivy::directory::OwnedBytes;
+#[cfg(not(feature = "tokio-time"))]
+use instant::Instant;
+use ownedbytes::OwnedBytes;
+#[cfg(feature = "tokio-time")]
 use tokio::time::Instant;
 
 /// It is a bit overkill to put this in its own module, but I

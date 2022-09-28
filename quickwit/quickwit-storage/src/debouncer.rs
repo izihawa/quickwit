@@ -26,8 +26,8 @@ use async_trait::async_trait;
 use fnv::FnvHashMap;
 use futures::future::{BoxFuture, WeakShared};
 use futures::{Future, FutureExt};
+use ownedbytes::OwnedBytes;
 use quickwit_common::uri::Uri;
-use tantivy::directory::OwnedBytes;
 
 use crate::{Storage, StorageResult};
 
