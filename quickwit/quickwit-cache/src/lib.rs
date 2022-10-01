@@ -27,7 +27,7 @@ use std::ops::Range;
 use std::path::{Path, PathBuf};
 
 use async_trait::async_trait;
-use ownedbytes::OwnedBytes;
+use tantivy::directory::OwnedBytes;
 
 pub use self::memory_sized_cache::MemorySizedCache;
 pub use self::metrics::CacheMetrics;

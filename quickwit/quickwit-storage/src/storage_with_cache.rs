@@ -22,11 +22,10 @@ use std::path::Path;
 use std::sync::Arc;
 
 use async_trait::async_trait;
-use ownedbytes::OwnedBytes;
 use quickwit_cache::Cache;
 use quickwit_common::uri::Uri;
 
-use crate::{Storage, StorageResult};
+use crate::{OwnedBytes, Storage, StorageResult};
 
 /// Use with care, StorageWithCache is read-only.
 pub struct StorageWithCache {

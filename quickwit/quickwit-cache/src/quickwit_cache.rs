@@ -22,10 +22,9 @@ use std::path::{Path, PathBuf};
 use std::sync::Arc;
 
 use async_trait::async_trait;
-use ownedbytes::OwnedBytes;
 
 use crate::metrics::CacheMetrics;
-use crate::{Cache, MemorySizedCache};
+use crate::{Cache, MemorySizedCache, OwnedBytes};
 
 const FULL_SLICE: Range<usize> = 0..usize::MAX;
 

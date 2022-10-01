@@ -26,7 +26,6 @@ use std::sync::Mutex;
 #[cfg(not(feature = "tokio-time"))]
 use instant::{Duration, Instant};
 use lru::{KeyRef, LruCache};
-use ownedbytes::OwnedBytes;
 #[cfg(feature = "tokio-time")]
 use tokio::time::{Duration, Instant};
 use tracing::{error, warn};
@@ -34,6 +33,7 @@ use tracing::{error, warn};
 use crate::metrics::CacheMetrics;
 use crate::slice_address::{SliceAddress, SliceAddressKey, SliceAddressRef};
 use crate::stored_item::StoredItem;
+use crate::OwnedBytes;
 
 /// We do not evict anything that has been accessed in the last 60s.
 ///

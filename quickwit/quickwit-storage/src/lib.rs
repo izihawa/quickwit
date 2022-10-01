@@ -52,9 +52,9 @@ mod storage_with_cache;
 
 use std::sync::Arc;
 
-use ownedbytes::OwnedBytes;
 use quickwit_cache::Cache;
 use quickwit_common::uri::Uri;
+use tantivy::directory::OwnedBytes;
 
 pub use self::bundle_storage::{BundleStorage, BundleStorageFileOffsets};
 pub use self::local_file_storage::{LocalFileStorage, LocalFileStorageFactory};

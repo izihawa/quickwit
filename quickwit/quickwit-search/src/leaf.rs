@@ -26,7 +26,6 @@ use anyhow::Context;
 use futures::future::try_join_all;
 use futures::Future;
 use itertools::{Either, Itertools};
-use ownedbytes::OwnedBytes;
 use quickwit_cache::MemorySizedCache;
 use quickwit_directories::{CachingDirectory, HotDirectory, StorageDirectory};
 use quickwit_doc_mapper::{DocMapper, QUICKWIT_TOKENIZER_MANAGER};
@@ -35,7 +34,7 @@ use quickwit_proto::{
 };
 use quickwit_storage::{wrap_storage_with_long_term_cache, BundleStorage, Storage};
 use tantivy::collector::Collector;
-use tantivy::directory::FileSlice;
+use tantivy::directory::{FileSlice, OwnedBytes};
 use tantivy::error::AsyncIoError;
 use tantivy::query::Query;
 use tantivy::schema::{Cardinality, Field, FieldType};

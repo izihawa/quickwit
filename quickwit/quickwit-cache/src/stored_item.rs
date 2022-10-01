@@ -19,9 +19,10 @@
 
 #[cfg(not(feature = "tokio-time"))]
 use instant::Instant;
-use ownedbytes::OwnedBytes;
 #[cfg(feature = "tokio-time")]
 use tokio::time::Instant;
+
+use crate::OwnedBytes;
 
 /// It is a bit overkill to put this in its own module, but I
 /// wanted to ensure that no one would access payload without updating `last_access_time`.
