@@ -1196,7 +1196,7 @@ checksum = "25c7df09945d65ea8d70b3321547ed414bbc540aad5bac6883d021b970f35b04"
 [[package]]
 name = "fastfield_codecs"
 version = "0.2.0"
-source = "git+https://github.com/izihawa/tantivy/?branch=feature/seg-attr#582abcb99916461e32411b882fa74ebd16e1e7c5"
+source = "git+https://github.com/izihawa/tantivy/?branch=feature/pub-rayon#1f0dc54e7de782e5ab14767342e383b211864de5"
 dependencies = [
  "fastdivide",
  "itertools",
@@ -1857,9 +1857,9 @@ checksum = "8bb03732005da905c88227371639bf1ad885cc712789c011c31c5fb3ab3ccf02"
 
 [[package]]
 name = "inventory"
-version = "0.3.1"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "30a61b8101d87996f82d725ba701b1987b7afc72f481c13513a30b855b9c9133"
+checksum = "e21e0a36a4dc4b469422ee17f715e8313f4a637675656d6a13637954278c6f55"
 dependencies = [
  "ctor",
  "ghost",
@@ -2041,9 +2041,9 @@ dependencies = [
 
 [[package]]
 name = "lru"
-version = "0.8.0"
+version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "936d98d2ddd79c18641c6709e7bb09981449694e402d1a0f0f657ea8d61f4a51"
+checksum = "b6e8aaa3f231bb4bd57b84b2d5dc3ae7f350265df8aa96492e0bc394a1571909"
 dependencies = [
  "hashbrown",
 ]
@@ -2569,7 +2569,7 @@ checksum = "9ff7415e9ae3fff1225851df9e0d9e4e5479f947619774677a63572e55e80eff"
 [[package]]
 name = "ownedbytes"
 version = "0.3.0"
-source = "git+https://github.com/izihawa/tantivy/?branch=feature/seg-attr#582abcb99916461e32411b882fa74ebd16e1e7c5"
+source = "git+https://github.com/izihawa/tantivy/?branch=feature/pub-rayon#1f0dc54e7de782e5ab14767342e383b211864de5"
 dependencies = [
  "stable_deref_trait",
 ]
@@ -3118,7 +3118,7 @@ version = "0.3.1"
 dependencies = [
  "async-trait",
  "instant",
- "lru 0.8.0",
+ "lru 0.8.1",
  "mockall",
  "once_cell",
  "ownedbytes",
@@ -3174,7 +3174,7 @@ dependencies = [
  "thousands",
  "tikv-jemalloc-ctl",
  "tikv-jemallocator",
- "time 0.3.14",
+ "time 0.3.15",
  "tokio",
  "tokio-util",
  "toml",
@@ -3303,7 +3303,7 @@ dependencies = [
  "tantivy",
  "tempfile",
  "thiserror",
- "time 0.3.14",
+ "time 0.3.15",
  "tokio",
  "tracing",
 ]
@@ -3333,7 +3333,7 @@ dependencies = [
  "tantivy",
  "tantivy-query-grammar",
  "thiserror",
- "time 0.3.14",
+ "time 0.3.15",
  "tracing",
  "typetag",
  "unwrap-infallible",
@@ -3380,7 +3380,7 @@ dependencies = [
  "tantivy",
  "tempfile",
  "thiserror",
- "time 0.3.14",
+ "time 0.3.15",
  "tokio",
  "tokio-stream",
  "tracing",
@@ -3436,7 +3436,7 @@ dependencies = [
  "tantivy",
  "tempfile",
  "thiserror",
- "time 0.3.14",
+ "time 0.3.15",
  "tokio",
  "tokio-stream",
  "tracing",
@@ -3469,7 +3469,7 @@ dependencies = [
  "sqlx",
  "tempfile",
  "thiserror",
- "time 0.3.14",
+ "time 0.3.15",
  "tokio",
  "tokio-stream",
  "tower",
@@ -3516,7 +3516,7 @@ dependencies = [
  "http",
  "hyper",
  "itertools",
- "lru 0.8.0",
+ "lru 0.8.1",
  "mockall",
  "once_cell",
  "opentelemetry",
@@ -3607,7 +3607,7 @@ dependencies = [
  "bytes",
  "fnv",
  "futures",
- "lru 0.8.0",
+ "lru 0.8.1",
  "md5",
  "mockall",
  "once_cell",
@@ -4516,9 +4516,9 @@ dependencies = [
 
 [[package]]
 name = "smallvec"
-version = "1.9.0"
+version = "1.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2fd0db749597d91ff862fd1d55ea87f7855a744a8425a64695b6fca237d1dad1"
+checksum = "a507befe795404456341dfab10cef66ead4c041f62b8b11bbb92bffe5d0953e0"
 
 [[package]]
 name = "socket2"
@@ -4613,7 +4613,7 @@ dependencies = [
  "sqlx-rt",
  "stringprep",
  "thiserror",
- "time 0.3.14",
+ "time 0.3.15",
  "tokio-stream",
  "url",
  "webpki-roots 0.22.5",
@@ -4792,7 +4792,7 @@ dependencies = [
 [[package]]
 name = "tantivy"
 version = "0.18.0"
-source = "git+https://github.com/izihawa/tantivy/?branch=feature/seg-attr#582abcb99916461e32411b882fa74ebd16e1e7c5"
+source = "git+https://github.com/izihawa/tantivy/?branch=feature/pub-rayon#1f0dc54e7de782e5ab14767342e383b211864de5"
 dependencies = [
  "arc-swap",
  "async-trait",
@@ -4835,7 +4835,7 @@ dependencies = [
  "tantivy-query-grammar",
  "tempfile",
  "thiserror",
- "time 0.3.14",
+ "time 0.3.15",
  "uuid",
  "winapi 0.3.9",
  "zstd",
@@ -4844,12 +4844,12 @@ dependencies = [
 [[package]]
 name = "tantivy-bitpacker"
 version = "0.2.0"
-source = "git+https://github.com/izihawa/tantivy/?branch=feature/seg-attr#582abcb99916461e32411b882fa74ebd16e1e7c5"
+source = "git+https://github.com/izihawa/tantivy/?branch=feature/pub-rayon#1f0dc54e7de782e5ab14767342e383b211864de5"
 
 [[package]]
 name = "tantivy-common"
 version = "0.3.0"
-source = "git+https://github.com/izihawa/tantivy/?branch=feature/seg-attr#582abcb99916461e32411b882fa74ebd16e1e7c5"
+source = "git+https://github.com/izihawa/tantivy/?branch=feature/pub-rayon#1f0dc54e7de782e5ab14767342e383b211864de5"
 dependencies = [
  "byteorder",
  "ownedbytes",
@@ -4869,7 +4869,7 @@ dependencies = [
 [[package]]
 name = "tantivy-query-grammar"
 version = "0.18.0"
-source = "git+https://github.com/izihawa/tantivy/?branch=feature/seg-attr#582abcb99916461e32411b882fa74ebd16e1e7c5"
+source = "git+https://github.com/izihawa/tantivy/?branch=feature/pub-rayon#1f0dc54e7de782e5ab14767342e383b211864de5"
 dependencies = [
  "combine",
  "once_cell",
@@ -5049,9 +5049,9 @@ dependencies = [
 
 [[package]]
 name = "time"
-version = "0.3.14"
+version = "0.3.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3c3f9a28b618c3a6b9251b6908e9c99e04b9e5c02e6581ccbb67d59c34ef7f9b"
+checksum = "d634a985c4d4238ec39cacaed2e7ae552fbd3c476b552c1deac3021b7d7eaf0c"
 dependencies = [
  "itoa 1.0.3",
  "js-sys",
@@ -5407,7 +5407,7 @@ dependencies = [
  "sharded-slab",
  "smallvec",
  "thread_local",
- "time 0.3.14",
+ "time 0.3.15",
  "tracing",
  "tracing-core",
  "tracing-log",
